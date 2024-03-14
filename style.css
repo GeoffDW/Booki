@@ -38,8 +38,9 @@ img {
 .main-container {
     width: 100%;
     max-width: 1440px;
-    padding: 0 50px;
     box-sizing: border-box;
+    padding:0 20px 0 50px;
+    ;
 }
 
 a {
@@ -80,26 +81,27 @@ a {
 header nav {
     display: flex;
     justify-content: space-between;
-    font-size: 15px;
-    padding: 0;
+    align-items: center;
+    font-size: 1.em;
     margin-bottom: 50px;
 }
 
 header nav a {
     border-top: 2px transparent solid;
-    padding: 30px;
+    margin: 20px;
 
 }
 
 header nav a:hover {
     color: var(--main-color);
     border-color: var(--main-color);
+    padding-top: 18px;
 }
 
 header img {
     margin: 10px 0 0 -10px;
     padding: 15px;
-    width: 4%;
+    width: 5%;
 }
 
 header li {
@@ -157,7 +159,6 @@ form {
 }
 
 .button-mob {
-    /* Problèmes de l'affichage du bouton */
     display: none ;
 }
 
@@ -473,23 +474,24 @@ footer h3 {
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
 
-    body {
-        margin: 0;
-    }
-
     .main-container {
-        padding: 20px;
+        padding: 0;
     }
 
     header nav {
         flex-direction: column;
-        align-items: center;   
     }
 
     header nav ul {
         display: flex;
         width: 100%;
     }
+
+    header > *:not(nav),
+.hebergements 
+{
+    padding: 0 0 0 50px;
+}
 
     header nav li {
         width: 50%;
@@ -501,28 +503,28 @@ footer h3 {
         border-bottom: 3px var(--main-bg-color) solid;
         width: 100%;
         padding-bottom: 12px;
-        font-size: 1.4em;
+        font-size: 1.2em;
     }
 
     header nav a:hover {
         border-top: none;
+        padding-bottom: 14px;
+        padding-top: 0;
+
     }
 
     header img {
-        width: 25%;
+        width: 20%;
         margin: 10px 0 15px 20px;
     }
 
     header h1 {
+        width: 87%;
         margin-top: -20px;
     }
 
     header p {
-        font-size: 20px;
-    }
-
-    form {
-        width: 100%;
+        font-size: 1em;
     }
 
     .button-dek {
@@ -534,13 +536,17 @@ footer h3 {
         color: white;
     }
 
+    form {
+        width: 87%;
+    }
+
     .button-mob {
         background-color: var(--main-color);
         border: 1px solid var(--main-bg-color);
         border-radius: 15px;
-        font-size: 15px;
+        font-size: 1.2em;
         height: 55px;
-        width: 30%;
+        width: 20%;
         box-shadow: #8f8f8f 0px 3px 3px;
         border-color: #0065FC;
     }
@@ -550,19 +556,23 @@ footer h3 {
         height: 55px;
         padding-left: 30px;
         font-weight: 550;
-        font-size: 20px;
+        font-size: 1.2em;
     }
 
     .fa-location-dot {
         height: 55px;
-        width: 33%;
+        width: 20%;
+    }
+
+    .filters {
+        width: 87%;
     }
 
     .filters ul {
-        width: 100%;
+        width: 87%;
         display: grid;
-        grid-template-columns: 53% 53%;
-        margin-left: -8px;
+        grid-template-columns: 55% 55%;
+        margin-left: 5px;
     }
 
     .filters li:nth-of-type(2) b {
@@ -571,7 +581,8 @@ footer h3 {
 
     header p {
         display: flex;
-        font-size: 18px;
+        font-size: 1em;
+        width: 84%;
     }
 
     .button-mob {
@@ -581,20 +592,21 @@ footer h3 {
     .main-container p i {
         border: #F2F2F2 solid 2px;
         border-radius: 50%;
-        padding: 20px 16px 10px 16px;
-        font-size: medium;
+        padding: 20px 16px 18px 16px;
+        font-size: 1em;
     }
     
     .hebergements-and-populaires {
         display: flex;
         flex-direction: column-reverse;
-        width: 110%;
-        margin-left: -20px;
+        width: 98%;
+        margin-left: 17px;
     }
 
     .hebergements-and-populaires section {
         border-radius: 0%;
         margin-top: 0;
+        width: 100%;
     }
 
     .populaires-cards {
@@ -606,7 +618,7 @@ footer h3 {
     .populaires-cards .card {
         display: flex;
         flex-direction: row;
-        margin: 15px 0 0 -10px;
+        margin-top: 15px;
     }
 
     .populaires-cards a {
@@ -625,6 +637,7 @@ footer h3 {
     .hebergements .card {
         height: 230px;
         width: 100%;
+        margin-left: 5px;
     }
 
     .hebergements img {
@@ -661,9 +674,9 @@ footer h3 {
 
     .activites ul {
         flex-direction: column;
-        width: 100%;
+        width: 90%;
         gap: 10px;
-        margin-left: -10px;
+        margin-left: 30px;
     }
 
     .activites li {
@@ -687,19 +700,20 @@ footer h3 {
     }
 
     .activites h2 {
-        margin: -30px 0 10px -8px;
+        width: 60%;
+        margin: -30px 0 10px 30px;
     }
 
     footer {
         flex-direction: column;
-        width: 100%;
-        margin-left: -15px;
+        width: 90%;
+        margin-left: 20px;
         gap: 25px;
         padding: 16px;
     }
 
     footer nav {
-        width: 100%;
+        width: 90%;
     }
 
     }
