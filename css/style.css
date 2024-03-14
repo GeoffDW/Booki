@@ -491,7 +491,7 @@ footer h3 {
         display: flex;
         justify-content: space-around;
         border-bottom: 3px var(--main-bg-color) solid;
-        width: 100%;
+        width: 90%;
         padding-bottom: 12px;
         font-size: 1.2em;
     }
@@ -536,22 +536,22 @@ footer h3 {
         border-radius: 15px;
         font-size: 1.2em;
         height: 55px;
-        width: 20%;
+        width: 18%;
         box-shadow: #8f8f8f 0px 3px 3px;
         border-color: #0065FC;
     }
 
     [type="search"] {
-        width: 100%;
+        width: 65%;
         height: 55px;
-        padding-left: 30px;
+        padding-left: 20px;
         font-weight: 550;
         font-size: 1.2em;
     }
 
     .fa-location-dot {
         height: 55px;
-        width: 20%;
+        width: 15%;
     }
 
     .filters {
@@ -561,8 +561,8 @@ footer h3 {
     .filters ul {
         width: 87%;
         display: grid;
-        grid-template-columns: 55% 55%;
-        margin-left: 5px;
+        grid-template-columns: 57% 59%;
+        margin-left: -5px;
     }
 
     .filters li:nth-of-type(2) b {
@@ -572,7 +572,7 @@ footer h3 {
     header p {
         display: flex;
         font-size: 1em;
-        width: 84%;
+        width: 88%;
     }
 
     .button-mob {
@@ -589,7 +589,7 @@ footer h3 {
     .hebergements-and-populaires {
         display: flex;
         flex-direction: column-reverse;
-        width: 98%;
+        width: 95%;
         margin-left: 17px;
     }
 
@@ -697,7 +697,7 @@ footer h3 {
     footer {
         flex-direction: column;
         width: 90%;
-        margin-left: 20px;
+        margin-left: 15px;
         gap: 25px;
         padding: 16px;
     }
