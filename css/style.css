@@ -128,8 +128,8 @@ header h1 {
     width: 170px;
     margin-bottom: 20px;
     margin-right: -10px;
-    font-size: 1.1em;
-    font-weight: 500;
+    font-size: 1em;
+    font-weight: 550;
     padding-left: 12px;
 }
 
@@ -138,8 +138,8 @@ header h1 {
     border: 1px solid var(--main-bg-color);
     border-radius: 0 15px 15px 0;
     color: white;
-    font-size: 15px;
-    font-weight: 600;
+    font-size: 0.9em;
+    font-weight: 550;
     height: 48px;
     width: 120px;
 }
@@ -158,7 +158,7 @@ header h1 {
 form {
     display: flex;
     justify-content: flex-start;
-    margin-top: -10px;
+    margin: -10px 0 12px 0;
 }
 
 .button-mob {
@@ -171,6 +171,7 @@ form {
     display: flex;
     align-items: center;
     gap: 20px;
+    padding-left: 15px;
 }
 
 .filters {
@@ -179,14 +180,13 @@ form {
 
 .filters li {
     display: flex;
-    justify-content: space-around;
     align-items: center;
     border: 2px solid #d6d6d6;
     border-radius: 30px;
-    height: 25px;
-    padding: 20px 17px 20px 10px;
+    height: 22px;
+    padding: 20px 15px 20px 8px;
+    font-size: 0.9em;
     cursor: pointer;
-    width: calc((100% - 20px) / 2);
     box-sizing: border-box;
 }
 
@@ -197,7 +197,6 @@ form {
 
 .filters h2 {
     font-size: 1.1em;
-    margin-right: 15px;
 }
 
 .filters i {
@@ -361,6 +360,7 @@ form {
 .activites h2 {
     font-size: 21px;
     margin-left: 20px;
+    margin-top: 40px;
 }
 
 /****** Footer ***********/
@@ -502,11 +502,13 @@ footer h3 {
     }
 
     header nav a {
-        display: flex;
+        display: block;
         justify-content: space-around;
         border-bottom: 3px var(--main-bg-color) solid;
         padding-bottom: 12px;
-        font-size: 1.2em;
+        font-size: 1em;
+        text-align: center;
+        margin: 0;
     }
 
     header nav a:hover {
@@ -518,7 +520,7 @@ footer h3 {
 
     header img {
         width: 20%;
-        margin: 10px 0 15px 20px;
+        margin: 10px 0 15px 10px;
     }
 
     header h1 {
@@ -540,7 +542,8 @@ footer h3 {
     }
 
     form {
-        width: 87%;
+        width: 90%;
+        margin-bottom: -7px;
     }
 
     .button-mob {
@@ -549,17 +552,17 @@ footer h3 {
         border-radius: 15px;
         font-size: 1em;
         height: 55px;
-        width: 18%;
+        width: 16%;
         box-shadow: #8f8f8f 0px 3px 3px;
         border-color: #0065FC;
     }
 
     [type="search"] {
-        width: 65%;
+        width: 75%;
         height: 55px;
-        padding-left: 20px;
+        padding-left: 30px;
         font-weight: 550;
-        font-size: 1em;
+        font-size: 1.1em;
     }
 
     .fa-location-dot {
@@ -567,11 +570,29 @@ footer h3 {
         width: 15%;
     }
 
+    .filters {
+        display: inline;
+        padding-left: 0;
+    }
+
     .filters ul {
-        width: 87%;
+        width: 95%;
         display: flex;
         flex-wrap: wrap;
-        gap: 20px;
+        gap: 15px;
+        margin-bottom: 30px;
+
+    }
+
+    .filters li {
+        justify-content: center;
+        width: calc((100% - 20px) / 2);
+        height: 25px;
+        font-size: 0.9em;
+    }
+
+    .filters h2 {
+        margin: 20px 0 20px 12px;
     }
 
     header p {
@@ -587,15 +608,12 @@ footer h3 {
     .main-container p i {
         border: #F2F2F2 solid 2px;
         border-radius: 50%;
-        padding: 20px 16px 18px 16px;
-        font-size: 1em;
+        margin: 12px;
     }
     
     .hebergements-and-populaires {
         display: flex;
         flex-direction: column-reverse;
-        width: 95%;
-        margin-left: 17px;
     }
 
     .hebergements-and-populaires section {
@@ -617,11 +635,11 @@ footer h3 {
     }
 
     .populaires-cards a {
-        width: 103%;
+        width: 100%;
     }
 
-    .hebergements {
-        margin-left: -5px;
+    .populaires-cards .card-rating {
+    font-size: 0.8em;
     }
 
     .hebergements li {
@@ -632,7 +650,6 @@ footer h3 {
     .hebergements .card {
         height: 230px;
         width: 100%;
-        margin-left: 5px;
     }
 
     .hebergements img {
@@ -645,21 +662,10 @@ footer h3 {
 
     .hebergements figcaption {
         margin: 6px;
-        font-size: 15px;
     }
 
     .hebergements-and-populaires .hebergements {
         background-color: white;
-    }
-
-    .hebergements-and-populaires .card-title {
-        font-size: 17px;
-    }
-    .hebergements-and-populaires .card-subtitle {
-        font-size: 15px;
-    }
-    .hebergements-and-populaires .card-rating {
-        font-size: 13px;
     }
     
     .hebergements > p {
@@ -669,15 +675,13 @@ footer h3 {
 
     .activites ul {
         flex-direction: column;
-        width: 90%;
+        width: 92%;
         gap: 10px;
-        margin-left: 30px;
     }
 
     .activites li {
         width: 100%;
         height: 212px;
-        margin-left: 0px;
     }
 
     .activites img {
@@ -695,22 +699,17 @@ footer h3 {
     }
 
     .activites h2 {
-        width: 60%;
-        margin: -30px 0 10px 30px;
+        width: 80%;
     }
 
     footer {
         flex-direction: column;
-        width: 90%;
-        margin-left: 16px;
         gap: 25px;
-        padding: 16px;
+        margin-left: 0;
     }
 
     footer nav {
-        width: 90%;
-    }
-
+        width: 100%;
     }
 
 
