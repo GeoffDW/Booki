@@ -451,15 +451,6 @@ footer h3 {
         height: 250px;
     }
 
-    .activites ul li:nth-of-type(3) figcaption {
-
-        padding-top: 5px;
-    }
-
-    .activites ul li:nth-of-type(4) figcaption {
-        padding-top: 5px;
-    }
-
     .activites figcaption {
         padding-top: 15px;
         font-size: 13px;
@@ -528,10 +519,6 @@ footer h3 {
         margin-top: -20px;
     }
 
-    header p {
-        font-size: 1em;
-    }
-
     .button-dek {
         display: none;
     }
@@ -592,13 +579,17 @@ footer h3 {
     }
 
     .filters h2 {
-        margin: 20px 0 20px 12px;
+        margin: 20px 0 20px 20px;
     }
 
     header p {
         display: flex;
         font-size: 1em;
-        width: 88%;
+    }
+
+    .infos {
+        align-items: center;
+        margin-left: -15px;
     }
 
     .button-mob {
@@ -689,12 +680,10 @@ footer h3 {
     }
 
     .activites ul li:nth-of-type(3) figcaption {
-        margin-left: 12px;
         padding-top: 15px;
     }
 
     .activites ul li:nth-of-type(4) figcaption {
-        margin-left: 1px;
         padding-top: 15px;
     }
 
