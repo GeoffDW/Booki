@@ -16,7 +16,7 @@
 body {
     display: flex;
     justify-content: center;
-    margin-left: -30px;
+    margin: 0;
 }
 
 ul {
@@ -39,7 +39,7 @@ img {
     width: 100%;
     max-width: 1440px;
     box-sizing: border-box;
-    padding:0 20px 0 50px;
+    padding:0 30px 0 30px;
     ;
 }
 
@@ -104,7 +104,11 @@ header img {
 
 header li {
     display: inline-block;
-    justify-content: space-between;
+}
+
+header nav ul {
+    display: flex;
+    gap: 30px;
 }
 
 header p, fa-infos {
@@ -124,7 +128,7 @@ header h1 {
     width: 170px;
     margin-bottom: 20px;
     margin-right: -10px;
-    font-size: 17px;
+    font-size: 1.1em;
     font-weight: 500;
     padding-left: 12px;
 }
@@ -165,6 +169,8 @@ form {
 
 .filters ul {
     display: flex;
+    align-items: center;
+    gap: 20px;
 }
 
 .filters {
@@ -178,9 +184,10 @@ form {
     border: 2px solid #d6d6d6;
     border-radius: 30px;
     height: 25px;
-    padding: 10px 17px 10px 10px;
-    margin: 8px;
+    padding: 20px 17px 20px 10px;
     cursor: pointer;
+    width: calc((100% - 20px) / 2);
+    box-sizing: border-box;
 }
 
 .filters li:hover {
@@ -190,7 +197,7 @@ form {
 
 .filters h2 {
     font-size: 1.1em;
-    margin: 18px 10px 0 0;
+    margin-right: 15px;
 }
 
 .filters i {
@@ -321,10 +328,6 @@ form {
 
 /****** Activites ***********/
 
-.activites {
-    margin: 60px 0 15px 20px;
-}
-
 .activites ul {
     display: flex;
     justify-content: space-around;
@@ -448,6 +451,15 @@ footer h3 {
         height: 250px;
     }
 
+    .activites ul li:nth-of-type(3) figcaption {
+
+        padding-top: 5px;
+    }
+
+    .activites ul li:nth-of-type(4) figcaption {
+        padding-top: 5px;
+    }
+
     .activites figcaption {
         padding-top: 15px;
         font-size: 13px;
@@ -479,11 +491,14 @@ footer h3 {
     header > *:not(nav),
 .hebergements 
 {
-    padding: 0 0 0 50px;
+    padding: 0 0 0 20px;
 }
 
     header nav li {
         width: 50%;
+    }
+    header nav ul{
+        gap: 0;
     }
 
     header nav a {
@@ -532,7 +547,7 @@ footer h3 {
         background-color: var(--main-color);
         border: 1px solid var(--main-bg-color);
         border-radius: 15px;
-        font-size: 1.2em;
+        font-size: 1em;
         height: 55px;
         width: 18%;
         box-shadow: #8f8f8f 0px 3px 3px;
@@ -544,7 +559,7 @@ footer h3 {
         height: 55px;
         padding-left: 20px;
         font-weight: 550;
-        font-size: 1.2em;
+        font-size: 1em;
     }
 
     .fa-location-dot {
@@ -552,19 +567,11 @@ footer h3 {
         width: 15%;
     }
 
-    .filters {
-        width: 87%;
-    }
-
     .filters ul {
         width: 87%;
-        display: grid;
-        grid-template-columns: 57% 59%;
-        margin-left: -5px;
-    }
-
-    .filters li:nth-of-type(2) b {
-        padding-right: 30px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
     }
 
     header p {
@@ -594,7 +601,7 @@ footer h3 {
     .hebergements-and-populaires section {
         border-radius: 0%;
         margin-top: 0;
-        width: 103%;
+        width: 100%;
     }
 
     .populaires-cards {
