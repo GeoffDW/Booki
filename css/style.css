@@ -88,12 +88,12 @@ header nav {
 
 header nav a {
     border-top: 2px transparent solid;
+    padding-top: 18px;
 }
 
 header nav a:hover {
     color: var(--main-color);
     border-color: var(--main-color);
-    padding-top: 18px;
 }
 
 header img {
@@ -496,16 +496,11 @@ footer h3 {
         display: block;
         justify-content: space-around;
         border-bottom: 3px var(--main-bg-color) solid;
-        padding-bottom: 12px;
+        padding-bottom: 14px;
         font-size: 1em;
         text-align: center;
         margin: 0;
-    }
-
-    header nav a:hover {
         border-top: none;
-        padding-bottom: 14px;
-        padding-top: 0;
 
     }
 
