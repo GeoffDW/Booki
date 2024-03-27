@@ -82,7 +82,7 @@ header nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-size: 1.em;
+    font-size: 1em;
     margin-bottom: 50px;
 }
 
@@ -498,6 +498,7 @@ footer h3 {
         padding-bottom: 14px;
         text-align: center;
         border-top: none;
+        font-size: 1.2em;
     }
 
     header img {
@@ -525,7 +526,7 @@ footer h3 {
     }
 
     .button-mob {
-        background-color: var(--main-color);
+        background-color: #F2F2F2;
         border: 1px solid var(--main-bg-color);
         border-radius: 15px;
         font-size: 1em;
@@ -691,5 +692,4 @@ footer h3 {
     footer nav {
         width: 100%;
     }
-
-
+}
